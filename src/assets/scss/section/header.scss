@@ -83,11 +83,11 @@
                     color: var(--white);
                 }
             }
-        }
-
-        &.active a {
-            background-color: var(--black200);
-            color: var(--white);
+            
+            &.active a {
+                background-color: var(--black200);
+                color: var(--white);
+            }
         }
     }
 }
