@@ -1,10 +1,11 @@
 import React from 'react'
+import Main from '../components/section/Main'
 
 const Search = () => {
   return (
-    <div>
+    <Main title = "Search" description = "Welcome to Search">
       Search
-    </div>
+    </Main>
   )
 }
 

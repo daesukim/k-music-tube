@@ -1,10 +1,11 @@
 import React from 'react'
+import Main from '../components/section/Main'
 
-function Channel() {
+const Channel = () => {
   return (
-    <div>
+    <Main title = "Channel" description = "Welcome to Channel">
       Channel
-    </div>
+    </Main>
   )
 }
 

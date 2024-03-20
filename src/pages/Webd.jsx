@@ -1,10 +1,11 @@
 import React from 'react'
+import Main from '../components/section/Main'
 
 const Webd = () => {
   return (
-    <div>
+    <Main title = "Webd" description = "Welcome to Webd">
       Webd
-    </div>
+    </Main>
   )
 }
 

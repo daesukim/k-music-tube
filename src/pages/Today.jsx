@@ -1,10 +1,11 @@
 import React from 'react'
+import Main from '../components/section/Main'
 
 const Today = () => {
   return (
-    <div>
+    <Main title = "Today" description = "Welcome to Today">
       Today
-    </div>
+    </Main>
   )
 }
 

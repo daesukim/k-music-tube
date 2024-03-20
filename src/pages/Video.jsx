@@ -1,10 +1,11 @@
 import React from 'react'
+import Main from '../components/section/Main'
 
 const Video = () => {
   return (
-    <div>
+    <Main title = "Video" description = "Welcome to Video">
       Video
-    </div>
+    </Main>
   )
 }
 

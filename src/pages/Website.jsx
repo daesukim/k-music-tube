@@ -1,10 +1,11 @@
 import React from 'react'
+import Main from '../components/section/Main'
 
 const Website = () => {
   return (
-    <div>
+    <Main title = "Website" description = "Welcome to Website">
       Website
-    </div>
+    </Main>
   )
 }
 
