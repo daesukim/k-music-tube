@@ -1,7 +1,6 @@
 import React from 'react'
 
 import { webdText } from '../../data/Webd'
-
 import { Link } from 'react-router-dom'
 
 
@@ -12,7 +11,7 @@ const Webd = () => {
       <div className="video_inner">
         {webdText.map((video, key) => (
           <div className="video" key={key}>
-            <div className='video_thumb_play_icon'>
+            <div className='video_thumb play_icon'>
               <Link to = {`/video/${video.videoId}`}>
                 <img src={video.img} alt={video.title} />
               </Link>

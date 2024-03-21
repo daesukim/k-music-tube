@@ -10,7 +10,7 @@ const Youtube = () => {
       <div className="video_inner">
         {youtubeText.map((video, key) => (
           <div className="video" key={key}>
-            <div className='video_thumb_play_icon'>
+            <div className='video_thumb play_icon'>
               <Link to = {`/video/${video.videoId}`}>
                 <img src={video.img} alt={video.title} />
               </Link>
