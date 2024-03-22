@@ -4,25 +4,23 @@ import Today from '../components/contents/Today'
 import Developer from '../components/contents/Developer'
 import VideoSlider from '../components/videos/VideoSlider'
 
-import { webdText } from '../data/Webd'
-import { websiteText } from '../data/Website'
-import { gsapText } from '../data/Gasp'
-import { portfolioText } from '../data/Portfolio'
-import { youtubeText } from '../data/Youtube'
+import { tradText } from '../data/Trad'
+import { kpopText } from '../data/Kpop'
+import { rnbText } from '../data/Rnb'
+import { ballardText } from '../data/Ballard'
 
 const Home = () => {
     return (
         <Main 
-            title = "웹스토리보이 유튜브"
-            description="웹스토리보이 유튜버 사이트에 오신 것을 환영합니다.">
+            title = "Korean Music"
+            description="Welcome to Korean Music website">
 
             <Today />
             <Developer />
-            <VideoSlider videos={webdText} title="😮 웹디자인기능사 준비는 이걸로!" id="webd" />
-            <VideoSlider videos={websiteText} title="😛 웹표준 사이트 만들기 기초 다지기" id="website" />
-            <VideoSlider videos={gsapText} title="🤓 GSAP 패럴랙스 효과를 하고 싶다면!" id="gsap" />
-            <VideoSlider videos={portfolioText} title="🤗 포트폴리오 만드는 방법을 공유합니다." id="portfolio" />
-            <VideoSlider videos={youtubeText} title="😱 지금 이 코딩을 영상으로" id="youtube" />
+            <VideoSlider videos={tradText} title="😮 Korean Traditional Music" id="trad" />
+            <VideoSlider videos={kpopText} title="😛 K-POP" id="kpop" />
+            <VideoSlider videos={rnbText} title="🤓 Korean R&B" id="rnb" />
+            <VideoSlider videos={ballardText} title="🤗 Korean Ballard" id="ballard" />
         </Main>
     )
 }

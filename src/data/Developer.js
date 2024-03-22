@@ -1,15 +1,15 @@
 export const developerText = [
     {
-        img: "https://yt3.googleusercontent.com/JuRcVt9OFQgqh7UL1LjihpVLEbjdNXt3tGq-IQfqRMT8wVXgWg_tzyz0S_GVsgqkB3ucBC5fqeY=s176-c-k-c0x00ffffff-no-rj",
-        name: "조코딩 JoCoding",
-        channelAddress: "https://www.youtube.com/@jocoding",
-        channelId: "UCQNE2JmbasNYbjGAcuBiRRg"
+        img: "https://yt3.googleusercontent.com/zL7KDS7WEHVbgpo6dM91hL5e91etHiuq2umW32iSePrhE5411SPsEdpAEcf5m5mYS-a_vpl7Ww=s176-c-k-c0x00ffffff-no-rj",
+        name: "BTS",
+        channelAddress: "www.youtube.com/@BTS",
+        channelId: "UCJCAlMsCuld3v96t-9SffdA"
     },
     {
-        img: "https://yt3.googleusercontent.com/ytc/AOPolaSNRWU5nI-gDyzEdtbhpLqWg8wXNs-FQHf35iMCOw=s176-c-k-c0x00ffffff-no-rj",
-        name: "생활코딩",
-        channelAddress: "https://www.youtube.com/@coohde",
-        channelId: "UCvc8kv-i5fvFTJBFAk6n1SA"
+        img: "https://yt3.googleusercontent.com/EMHEc8vNqHUC-eBFl_RrLcla7_NH6hEohpi0RrMABe6cOcmCabmnxcqfVFmONWTQg5LtbpNkQg=s176-c-k-c0x00ffffff-no-rj",
+        name: "BLACKPINK",
+        channelAddress: "www.youtube.com/@BLACKPINK",
+        channelId: "UCQi67q4kGdmnJaRzX81uK5g"
     },
     {
         img: "https://yt3.googleusercontent.com/ytc/AOPolaSn88PvVXWN_Wy5vSr-5Eo_NGDdw_apL6bM7QKfCw=s176-c-k-c0x00ffffff-no-rj",

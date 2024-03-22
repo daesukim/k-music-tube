@@ -1,14 +1,15 @@
 import React from 'react'
 
-import { rnbText } from '../../data/Rnb'
+import { tradText } from '../../data/Trad'
 import { Link } from 'react-router-dom'
 
-function Rnb() {
+
+const Trad = () => {
   return (
-    <section id = "rnb">
-      <h2> Creating Websites </h2>
+    <section id = "tradPage">
+      <h2> Korean Traditional Music </h2>
       <div className="video_inner">
-        {gsapText.map((video, key) => (
+        {tradText.map((video, key) => (
           <div className="video" key={key}>
             <div className='video_thumb play_icon'>
               <Link to = {`/video/${video.videoId}`}>
@@ -22,4 +23,4 @@ function Rnb() {
   )
 }
 
-export default Rnb
+export default Trad

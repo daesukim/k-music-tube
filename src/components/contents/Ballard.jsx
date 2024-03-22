@@ -1,14 +1,14 @@
 import React from 'react'
 
-import { rnbText } from '../../data/Rnb'
+import { ballardText } from '../../data/Ballard'
 import { Link } from 'react-router-dom'
 
-function Rnb() {
+function Ballard() {
   return (
-    <section id = "rnb">
-      <h2> Creating Websites </h2>
+    <section id = "ballard">
+      <h2> Korean Ballard </h2>
       <div className="video_inner">
-        {gsapText.map((video, key) => (
+        {ballardText.map((video, key) => (
           <div className="video" key={key}>
             <div className='video_thumb play_icon'>
               <Link to = {`/video/${video.videoId}`}>
@@ -22,4 +22,4 @@ function Rnb() {
   )
 }
 
-export default Rnb
+export default Ballard

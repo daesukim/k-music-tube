@@ -6,9 +6,9 @@ import { Link } from 'react-router-dom'
 
 const Developer = () => {
   return (
-    <Main title = "Developer" description = "Welcome to Developer">
+    <Main title = "Developer" description = "Favorite Artists">
       <section id = "developerPage">
-        <h2>Favorite Developers</h2>
+        <h2>Favorite Artists</h2>
         <div className='developer_inner'>
           {developerText.map((developer, key) => (
             <div className='developer' key={key}>

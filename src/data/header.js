@@ -4,61 +4,59 @@ import { CiBoxes } from "react-icons/ci";
 import { CiBullhorn } from "react-icons/ci";
 import { CiCoffeeCup } from "react-icons/ci";
 import { CiDumbbell } from "react-icons/ci";
-import { CiFries } from "react-icons/ci";
 import { CiMoneyBill } from "react-icons/ci";
 
 import { AiFillGithub } from "react-icons/ai";
-import { AiOutlineCodepen } from "react-icons/ai";
+import { FaLinkedin } from "react-icons/fa";
 import { AiFillYoutube } from "react-icons/ai";
 import { AiOutlineInstagram } from "react-icons/ai";
 
 export const headerMenus = [
     {
-        title: "웹스토리보이",
+        title: "Overview",
         icon: <CiBaseball />,
         src: "/"
     },
     {
-        title: "추천 영상",
+        title: "Recommended Videos",
         icon: <CiMoneyBill />,
         src: "/today"
     },
     {
-        title: "추천 개발자",
+        title: "Favorite Artists",
         icon: <CiCoins1 />,
         src: "/developer"
     },
     {
-        title: "웹디자인기능사",
+        title: "Korean Traditional Music",
         icon: <CiBoxes />,
-        src: "/webd"
+        src: "/trad"
     },
     {
-        title: "웹표준 사이트",
+        title: "Korean Hip Hop",
         icon: <CiBullhorn />,
-        src: "/website"
+        src: "/kpop"
     },
     {
-        title: "GSAP Parallax",
+        title: "Korean R&B",
         icon: <CiCoffeeCup />,
-        src: "/gsap"
+        src: "/rnb"
     },
     {
-        title: "포트폴리오 사이트",
+        title: "Korean Ballard",
         icon: <CiDumbbell />,
-        src: "/port"
-    },
-    {
-        title: "유튜브 클론 사이트",
-        icon: <CiFries />,
-        src: "/youtube"
+        src: "/ballard"
     },
 ];
 
 export const searchKeyword = [
     {
-        title: "webstoryboy",
-        src: "/search/webstoryboy"
+        title: "Korean Music",
+        src: "/search/korean music"
+    },
+    {
+        title: "K-POP",
+        src: "/search/korean music"
     },
     {
         title: "HTML",
@@ -93,12 +91,8 @@ export const searchKeyword = [
         src: "/search/sql"
     },
     {
-        title: "portfolio",
-        src: "/search/React Portfolio"
-    },
-    {
-        title: "music",
-        src: "/search/NewJeans"
+        title: "RapidAPI",
+        src: "/search/RapidAPI"
     }
 ];
 
@@ -110,17 +104,17 @@ export const snsLink = [
     },
     {
         title: "youtube",
-        url: "https://www.youtube.com/webstoryboy",
+        url: "https://www.youtube.com/@DaesuKim-ek7co",
         icon: <AiFillYoutube />
     },
     {
-        title: "codepen",
-        url: "https://codepen.io/webstoryboy",
-        icon: <AiOutlineCodepen />
+        title: "LinkedIn",
+        url: "https://www.linkedin.com/in/daesu-kim-399929257",
+        icon: <FaLinkedin />
     },
     {
         title: "instagram",
-        url: "https://www.instagram.com/webstoryboy",
+        url: "https://www.instagram.com/dk_ighty",
         icon: <AiOutlineInstagram />
     },
 ]
