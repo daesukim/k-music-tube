@@ -34,11 +34,19 @@
     #header{
         top: 80px;
         left: -260px;
+        background-color: var(--black);
+        transition: left 0.3s;
 
         h1{
             position: fixed;
             left: 0;
             top:0;
+        }
+        .header__menu {
+            margin-top: 90px;
+        };
+        &.active {
+            left: 0;
         }
     }
 
