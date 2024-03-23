@@ -5,7 +5,7 @@ const Logo = () => {
     <h1 className="header_logo">
             <a href='/'>
                 <em aria-hidden = "true"></em>
-                <span>webs<br />youtube</span>
+                <span>K-Music<br />Tube</span>
             </a>
     </h1>
   )

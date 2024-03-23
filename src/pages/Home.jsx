@@ -17,10 +17,10 @@ const Home = () => {
 
             <Today />
             <Developer />
-            <VideoSlider videos={tradText} title="😮 Korean Traditional Music" id="trad" />
-            <VideoSlider videos={kpopText} title="😛 K-POP" id="kpop" />
+            <VideoSlider videos={tradText} title="😁 Korean Traditional Music" id="trad" />
+            <VideoSlider videos={kpopText} title="😆 K-POP" id="kpop" />
             <VideoSlider videos={rnbText} title="🤓 Korean R&B" id="rnb" />
-            <VideoSlider videos={ballardText} title="🤗 Korean Ballard" id="ballard" />
+            <VideoSlider videos={ballardText} title="🤤 Korean Ballard" id="ballard" />
         </Main>
     )
 }

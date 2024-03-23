@@ -56,7 +56,15 @@ export const searchKeyword = [
     },
     {
         title: "K-POP",
-        src: "/search/korean music"
+        src: "/search/kpop"
+    },
+    {
+        title: "Korean R&B",
+        src: "/search/Korean R&B"
+    },
+    {
+        title: "Korean Ballard",
+        src: "/search/Korean Ballard"
     },
     {
         title: "HTML",
@@ -72,19 +80,7 @@ export const searchKeyword = [
     },
     {
         title: "React.js",
-        src: "/search/react.js"
-    },
-    {
-        title: "Vue.js",
-        src: "/search/vue.js"
-    },
-    {
-        title: "Next.js",
-        src: "/search/next.js"
-    },
-    {
-        title: "Node.js",
-        src: "/search/node.js"
+        src: "/search/react"
     },
     {
         title: "SQL",

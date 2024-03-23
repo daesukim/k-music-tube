@@ -12,7 +12,7 @@ import { Navigation, Autoplay } from 'swiper/modules';
 const Developer = () => {
     return (
         <section id='developer'>
-            <h2>😪 Favorite Artists </h2>
+            <h2>👍 Favorite Artists </h2>
             <div className='developer_inner'>
                 <Swiper
                     slidesPerView={4}
