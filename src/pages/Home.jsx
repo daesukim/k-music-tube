@@ -21,6 +21,7 @@ const Home = () => {
             <VideoSlider videos={kpopText} title="😆 K-POP" id="kpop" />
             <VideoSlider videos={rnbText} title="🤓 Korean R&B" id="rnb" />
             <VideoSlider videos={ballardText} title="🤤 Korean Ballard" id="ballard" />
+            {console.log("This is my API key" + process.env.REACT_APP_RAPID_API_KEY)}
         </Main>
     )
 }
