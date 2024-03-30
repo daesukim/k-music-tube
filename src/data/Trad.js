@@ -3,6 +3,9 @@ import trad02 from "../assets/img/trad/trad02.jpg";
 import trad03 from "../assets/img/trad/trad03.jpg";
 import trad04 from "../assets/img/trad/trad04.jpg";
 import trad05 from "../assets/img/trad/trad05.jpg";
+import trad06 from "../assets/img/trad/trad06.jpg";
+import trad07 from "../assets/img/trad/trad07.jpg";
+import trad08 from "../assets/img/trad/trad08.jpg";
 
 
 export const tradText = [
@@ -40,6 +43,27 @@ export const tradText = [
         author: "Tophyun World",
         videoId: "D92O5JT3E8A",
         date: "2022.01.15",
+        channelId: "UCc31zhnmSwJB8czlaXlFSSg",
+    },{
+        title: "The Red Knot (홍연)",
+        img: trad06,
+        author: "Ahn Ye Eun",
+        videoId: "B61nm9OHt5A",
+        date: "2016.12.15",
+        channelId: "UCc31zhnmSwJB8czlaXlFSSg",
+    },{
+        title: "Fox Rain",
+        img: trad07,
+        author: "Lee Sun Hee",
+        videoId: "H9j-7Pxpyzc",
+        date: "2023.06.24",
+        channelId: "UCc31zhnmSwJB8czlaXlFSSg",
+    },{
+        title: "Fate",
+        img: trad08,
+        author: "Lee Sun Hee",
+        videoId: "bkoEIpHApzA",
+        date: "2020.08.11",
         channelId: "UCc31zhnmSwJB8czlaXlFSSg",
     },
 ]

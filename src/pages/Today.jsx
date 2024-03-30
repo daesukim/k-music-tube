@@ -7,8 +7,6 @@ import { Link } from 'react-router-dom'
 const Today = () => {
   return (
     <Main title = "Today" description = "Today's recommended videos">
-      
-
       <section id = "todayPage">
         <h2> Today's Recommended Videos</h2>
         {todayText.map((today, key) => (
