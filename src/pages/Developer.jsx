@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 
 const Developer = () => {
   return (
-    <Main title = "Developer" description = "Favorite Artists">
+    <Main title = "Artists" description = "Favorite Artists">
       <section id = "developerPage">
         <h2>Favorite Artists</h2>
         <div className='developer_inner'>
