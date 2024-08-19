@@ -8,7 +8,7 @@ const Developer = () => {
   return (
     <Main title = "Artists" description = "Favorite Artists">
       <section id = "developerPage">
-        <h2>Favorite Artists</h2>
+        <h2>👍Favorite Artists</h2>
         <div className='developer_inner'>
           {developerText.map((developer, key) => (
             <div className='developer' key={key}>
