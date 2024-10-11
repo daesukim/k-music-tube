@@ -24,12 +24,11 @@ jobs:
       - name: Build the project
         run: npm run build # Adjust to your build command (e.g., `npm run build`)
 
-
-      # - name: Deploy to Netlify
-      #   uses: nwtgck/actions-netlify@v1.3.0
-      #   with:
-      #     publish-dir: ./build # Adjust to your build output directory
-      #     production-deploy: true
-      #     github-token: ${{ secrets.GITHUB_TOKEN }} # GitHub token for permissions
-      #     netlify-auth-token: ${{ secrets.NETLIFY_AUTH_TOKEN }} # Your Netlify auth token
-      #     netlify-site-id: ${{ secrets.NETLIFY_SITE_ID }} # Your Netlify site ID
+      - name: Deploy to Netlify
+        uses: nwtgck/actions-netlify@v1.3.0
+        with:
+          publish-dir: ./build # Adjust to your build output directory
+          production-deploy: true
+          github-token: ${{ secrets.GITHUB_TOKEN }} # GitHub token for permissions
+          netlify-auth-token: ${{ secrets.NETLIFY_AUTH_TOKEN }} # Your Netlify auth token
+          netlify-site-id: ${{ secrets.NETLIFY_SITE_ID }} # Your Netlify site ID
