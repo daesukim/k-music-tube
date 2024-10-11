@@ -1,9 +1,10 @@
 name: Deploy to Netlify Production
 
 on:
-  push:
-    branches:
-      - none
+  workflow_dispatch:
+  # push:
+  #   branches:
+  #     - none
 
 jobs:
   deploy:
