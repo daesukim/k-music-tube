@@ -27,8 +27,14 @@ jobs:
       - name: Deploy to Netlify
         uses: nwtgck/actions-netlify@v3.0
         with:
-          publish-dir: ./build # Adjust to your build output directory
-          production-deploy: true
-          github-token: ${{ secrets.GITHUB_TOKEN }} # GitHub token for permissions
-          netlify-auth-token: ${{ secrets.NETLIFY_AUTH_TOKEN }} # Your Netlify auth token
-          netlify-site-id: ${{ secrets.NETLIFY_SITE_ID }} # Your Netlify site ID
+          publish-dir: "./dist"
+          production-branch: master
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          deploy-message: "Deploy from GitHub Actions"
+          enable-pull-request-comment: false
+          enable-commit-comment: true
+          overwrites-pull-request-comment: true
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+        timeout-minutes: 1
