@@ -25,7 +25,7 @@ jobs:
         run: npm run build # Adjust to your build command (e.g., `npm run build`)
 
       - name: Deploy to Netlify
-        uses: nwtgck/actions-netlify@v1.3.0
+        uses: nwtgck/actions-netlify@v3.0
         with:
           publish-dir: ./build # Adjust to your build output directory
           production-deploy: true
