@@ -1,0 +1,35 @@
+name: Deploy to Netlify
+
+on:
+  push:
+    branches:
+      - main # Change this to your default branch if different
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: "20" # Use Node.js version 20
+
+      - name: Install dependencies
+        run: npm install # Adjust if you're using a different package manager
+
+      - name: Build the project
+        run: npm run build # Adjust to your build command (e.g., `npm run build`)
+
+
+      # - name: Deploy to Netlify
+      #   uses: nwtgck/actions-netlify@v1.3.0
+      #   with:
+      #     publish-dir: ./build # Adjust to your build output directory
+      #     production-deploy: true
+      #     github-token: ${{ secrets.GITHUB_TOKEN }} # GitHub token for permissions
+      #     netlify-auth-token: ${{ secrets.NETLIFY_AUTH_TOKEN }} # Your Netlify auth token
+      #     netlify-site-id: ${{ secrets.NETLIFY_SITE_ID }} # Your Netlify site ID
