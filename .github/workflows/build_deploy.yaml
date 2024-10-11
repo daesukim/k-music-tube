@@ -1,9 +1,9 @@
-name: Deploy to Netlify
+name: Deploy to Netlify Production
 
 on:
   push:
     branches:
-      - main # Change this to your default branch if different
+      - none
 
 jobs:
   deploy:
