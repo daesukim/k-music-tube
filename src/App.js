@@ -14,7 +14,6 @@ const Video = lazy(() => import('./pages/Video'));
 const Search = lazy(() => import('./pages/Search'));
 const Not = lazy(() => import('./pages/Not'));
 
-
 const App = () => {
   return (
     <BrowserRouter>
