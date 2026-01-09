@@ -1,19 +1,19 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { fetchFromAPI } from '../utils/api'
-
 import Main from '../components/section/Main';
 import ReactPlayer from 'react-player';
-
 import { CiChat1 } from "react-icons/ci";
 import { CiStar } from "react-icons/ci";
 import { CiRead } from "react-icons/ci";
+import { usePageTitle } from '../utils/usePageTitle';
 
 
 const Video = () => {
-
   const {videoID} = useParams();
-  const [ videoDetail, setVideoDetail ] = useState(null);
+  const [videoDetail, setVideoDetail] = useState(null);
+
+  usePageTitle(videoDetail?.snippet.title);
 
   useEffect(() => {
     fetchFromAPI(`videos?part=snippet,statistics&id=${videoID}`)
@@ -25,7 +25,7 @@ const Video = () => {
 
 
   return (
-    <Main title = "Video" description = "Welcome to Video">
+    <Main>
       {videoDetail && (
         <div className="video_view">
           <div className="video_play">

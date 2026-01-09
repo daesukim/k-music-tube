@@ -1,15 +1,17 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import Main from '../components/section/Main'
-
 import VideoSearch from '../components/videos/VideoSearch';
 import {fetchFromAPI} from '../utils/api'
+import { usePageTitle } from '../utils/usePageTitle';
 
 const Search = () => {
-  const { searchID }  = useParams();
-  const[videos, setVideos] = useState([]);
-  const[nextPageToken, setNextPageToken] = useState(null);
-  const[loading, setLoading] = useState(true);
+  const {searchID}  = useParams();
+  const [videos, setVideos] = useState([]);
+  const [nextPageToken, setNextPageToken] = useState(null);
+  const [loading, setLoading] = useState(true);
+
+  usePageTitle('Search Result')
 
   useEffect(() => {
     setVideos([]);
@@ -39,7 +41,7 @@ const Search = () => {
   const searchPageClass = loading ? 'isLoading' : 'isLoaded';
 
   return (
-    <Main title = "Search" description = "Welcome to Search">
+    <Main>
       <section id = 'searchPage' className={searchPageClass}>
         <div className='video_inner search'>
           <VideoSearch videos = {videos} />

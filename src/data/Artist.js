@@ -1,4 +1,4 @@
-export const developerText = [
+export const ArtistText = [
     {
         img: "https://yt3.googleusercontent.com/ytc/AIdro_kZTp8nFJ54DGQKha1sHzyNvCH6vZ8kYZNehGIz0Q=s176-c-k-c0x00ffffff-no-rj",
         name: "YB",

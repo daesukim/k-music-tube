@@ -1,11 +1,9 @@
-import React from 'react'
-
 import { todayText } from '../../data/Today'
 import { Link } from 'react-router-dom'
 
 const Today = () => {
   return (
-    <section id = "today">
+    <section id="today">
       <div className='today_inner'>
         <div className='today_thumb play_icon'>
           <Link to = {todayText[0].page}>

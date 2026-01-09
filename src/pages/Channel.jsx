@@ -1,13 +1,12 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { fetchFromAPI } from '../utils/api'
-
 import Main from '../components/section/Main';
 import VideoSearch from '../components/videos/VideoSearch';
-
 import { CiBadgeDollar } from "react-icons/ci";
 import { CiMedal } from "react-icons/ci";
 import { CiRead } from "react-icons/ci";
+import { usePageTitle } from '../utils/usePageTitle';
 
 const Channel = () => {
   const { channelID } = useParams();
@@ -15,6 +14,8 @@ const Channel = () => {
   const [ channelVideo, setChannelVideo ] = useState();
   const [ loading, setLoading ] = useState(true);
   const [ nextPageToken, setNextPageToken] = useState(null);
+
+  usePageTitle('Channel');
 
   useEffect(() => {
     const fetchResults = async () => {
@@ -46,8 +47,7 @@ const Channel = () => {
   const channelPageClass = loading ? 'isLoading' : 'isLoaded';
 
   return (
-    <Main title = "Channel" description = "Welcome to Channel">
-
+    <Main>
       <section id = 'channel' className={channelPageClass}>
         {channelDetail&& (
           <div className='channel_inner'>

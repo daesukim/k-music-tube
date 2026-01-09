@@ -1,5 +1,4 @@
-import React, {useState} from 'react'
-
+import {useState} from 'react'
 import { useNavigate } from 'react-router-dom'
 
 const Search = () => {
@@ -7,13 +6,11 @@ const Search = () => {
   const navigate = useNavigate();
 
   const handleSearch = () => {
-    console.log(searchKeyword);
     if(searchKeyword){
       navigate(`/search/${searchKeyword}`);
       setSearchKeyword("");
     }
   };
-
 
   return (
     <div id = 'search'>

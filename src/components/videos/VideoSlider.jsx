@@ -1,10 +1,8 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
-
 import { Navigation } from 'swiper/modules';
 
 const VideoSlider = ({ videos, title, id }) => {
@@ -20,7 +18,9 @@ const VideoSlider = ({ videos, title, id }) => {
 
     return (
         <section id={id} className={youtubeClass}>
-            <h2>{title}</h2>
+            <div className='section-title'>
+                <h2>{title}</h2>
+            </div>
             <div className='video__inner'>
                 <Swiper
                     slidesPerView={1}

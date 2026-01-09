@@ -1,4 +1,4 @@
-.developer_inner {
+.artist_inner {
     display: flex;
     flex-wrap: wrap;
 
@@ -8,13 +8,13 @@
         overflow: hidden;
     }
 
-    .developer {
-        .developer_img {
+    .artist {
+        .artist_img {
             border-radius: 50%;
             overflow: hidden;
             margin-bottom: 10px;
         }
-        .developer_info {
+        .artist_info {
             text-align: center;
             @include line-one;
         }
@@ -22,16 +22,16 @@
 }
 
 
-#developerPage {
-    .developer_inner {
-        .developer {
+#artistPage {
+    .artist_inner {
+        .artist {
             margin-right: 20px;
         }
-        .developer_img {
+        .artist_img {
             width: 150px;
             height: 150px;
         }
-        .developer_info {
+        .artist_info {
             width: 150px;
             padding-bottom: 40px;
         }
@@ -39,14 +39,14 @@
 }
 
 @media (max-width: 1200px){
-    #developerPage {
-        .developer_inner {
+    #artistPage {
+        .artist_inner {
             justify-content: center;
     
-            .developer {
+            .artist {
                 margin-right: 0;
                 
-                .developer_img {
+                .artist_img {
                     width: 130px;
                     height: 130px;
                     margin: 10px auto;
@@ -57,8 +57,8 @@
     
 }
 @media (max-width: 800px){
-    #developerPage {
-        .developer_inner {
+    #artistPage {
+        .artist_inner {
             margin-top: 70px;
         }
     }

@@ -25,7 +25,7 @@ export const headerMenus = [
     {
         title: "Favorite Artists",
         icon: <CiCoins1 />,
-        src: "/developer"
+        src: "/artists"
     },
     {
         title: "Korean Traditional Music",
@@ -51,44 +51,60 @@ export const headerMenus = [
 
 export const searchKeyword = [
     {
-        title: "Korean Music",
-        src: "/search/korean music"
+        title: "Angular",
+        src: "/search/angular"
     },
     {
-        title: "K-POP",
-        src: "/search/kpop"
-    },
-    {
-        title: "Korean R&B",
-        src: "/search/Korean R&B"
-    },
-    {
-        title: "Korean Ballard",
-        src: "/search/Korean Ballard"
-    },
-    {
-        title: "HTML",
-        src: "/search/html"
-    },
-    {
-        title: "CSS",
-        src: "/search/css"
-    },
-    {
-        title: "JavaScript",
-        src: "/search/javascript"
-    },
-    {
-        title: "React.js",
+        title: "React",
         src: "/search/react"
     },
     {
-        title: "SQL",
-        src: "/search/sql"
+        title: "CMS",
+        src: "/search/cms"
     },
     {
-        title: "RapidAPI",
-        src: "/search/RapidAPI"
+        title: "Typescript",
+        src: "/search/typescript"
+    },
+    {
+        title: "Express",
+        src: "/search/express"
+    },
+    {
+        title: "MongoDB",
+        src: "/search/mongodb"
+    },
+    {
+        title: "MySQL",
+        src: "/search/mysql"
+    },
+    {
+        title: "PHP",
+        src: "/search/php"
+    },
+    {
+        title: "Docker",
+        src: "/search/docker"
+    },
+    {
+        title: "Kubernetes",
+        src: "/search/kubernetes"
+    },
+    {
+        title: "AWS",
+        src: "/search/aws"
+    },
+    {
+        title: "Azure",
+        src: "/search/azure"
+    },
+    {
+        title: "Bootstrap",
+        src: "/search/bootstrap"
+    },
+    {
+        title: "Tailwind",
+        src: "/search/tailwind"
     }
 ];
 
@@ -99,11 +115,6 @@ export const snsLink = [
         icon: <AiFillGithub />
     },
     {
-        title: "youtube",
-        url: "https://www.youtube.com/@DaesuKim-ek7co",
-        icon: <AiFillYoutube />
-    },
-    {
         title: "LinkedIn",
         url: "https://www.linkedin.com/in/daesu-kim-399929257",
         icon: <FaLinkedin />
@@ -112,5 +123,5 @@ export const snsLink = [
         title: "instagram",
         url: "https://www.instagram.com/dk_ighty",
         icon: <AiOutlineInstagram />
-    },
+    }
 ]

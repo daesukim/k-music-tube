@@ -1,9 +1,11 @@
-import React from 'react'
 import Main from '../components/section/Main'
+import { usePageTitle } from '../utils/usePageTitle'
 
 const Not = () => {
+  usePageTitle('Not Found');
+  
   return (
-    <Main title = "Not" description = "Not Found">
+    <Main>
       Not Found
     </Main>
   )

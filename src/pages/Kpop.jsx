@@ -1,11 +1,13 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import Main from '../components/section/Main'
-
 import VideoCards from '../components/videos/VideoCard'
 import { kpopText } from '../data/Kpop'
+import { usePageTitle } from '../utils/usePageTitle'
 
 const Kpop = () => {
-  const [loading, setLoading] = useState(true); 
+  const [loading, setLoading] = useState(true);
+
+  usePageTitle('K-pop');
 
   useEffect(() => {
       setTimeout(() => {
@@ -16,9 +18,11 @@ const Kpop = () => {
   const kpopPageClass = loading ? 'isLoading' : 'isLoaded';
 
   return (
-    <Main title = "K-pop" description = "Recommended Korean Hip Hop">
+    <Main>
       <section id='kpopPage' className={kpopPageClass}>
-        <h2>😄 K-POP </h2>
+        <div className='section-title'>
+            <h2>K-POP</h2>
+        </div>
         <div className="video_inner">
             <VideoCards videos={kpopText} />
         </div>

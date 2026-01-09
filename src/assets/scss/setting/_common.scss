@@ -3,19 +3,34 @@ body {
     color: var(--white);
 }
 
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: var(--black200);
+}
 
+::-webkit-scrollbar-thumb {
+  background-color: var(--white200);
+  border-radius: 6px;
+}
 
 // section common elements
 section{
     padding: 40px;
 
     @media (max-width: 800px){
+        margin-top: 80px;
         padding: 20px;
     }
 
     h2 {
         font-size: 1.25rem;
         margin-bottom: 1rem;
+    }
+
+    .section-title{
+        border-left: 6px solid var(--white100);
+        padding-left: 12px;
+        width: fit-content;
     }
 }
 

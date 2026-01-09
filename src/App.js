@@ -1,10 +1,9 @@
-import React, { Suspense, lazy } from 'react'
+import { Suspense, lazy } from 'react'
 import {BrowserRouter, Route, Routes}  from 'react-router-dom';
 import Main from './components/section/Main';
-
 const Home = lazy(() => import('./pages/Home'));
 const Today = lazy(() => import('./pages/Today'));
-const Developer = lazy(() => import('./pages/Developer'));
+const Artists = lazy(() => import('./pages/Artists'));
 const Trad = lazy(() => import('./pages/Trad'));
 const Kpop = lazy(() => import('./pages/Kpop'));
 const Rnb = lazy(() => import('./pages/Rnb'));
@@ -21,7 +20,7 @@ const App = () => {
         <Routes>
           <Route path = '/' element={<Home/>} />
           <Route path = '/today' element={<Today/>} />
-          <Route path = '/developer' element={<Developer/>} />
+          <Route path = '/artists' element={<Artists/>} />
           <Route path = '/trad' element={<Trad/>} />
           <Route path = '/kpop' element={<Kpop/>} />
           <Route path = '/rnb' element={<Rnb/>} />

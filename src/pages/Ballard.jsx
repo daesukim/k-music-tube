@@ -1,11 +1,13 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import Main from '../components/section/Main'
-
 import VideoCards from '../components/videos/VideoCard'
 import { ballardText } from '../data/Ballard'
+import { usePageTitle } from '../utils/usePageTitle'
 
 const Port = () => {
   const [loading, setLoading] = useState(true); 
+
+  usePageTitle('Ballard');
 
   useEffect(() => {
       setTimeout(() => {
@@ -16,9 +18,11 @@ const Port = () => {
   const ballardPageClass  = loading ? 'isLoading' : 'isLoaded';
 
   return (
-    <Main title = "Ballard" description = "Korean Ballard">
+    <Main>
       <section id='ballardPage' className={ballardPageClass}>
-        <h2>😄 Korean Ballard </h2>
+        <div className='section-title'>
+            <h2>Korean Ballard</h2>
+        </div>
         <div className="video_inner">
             <VideoCards videos={ballardText} />
         </div>

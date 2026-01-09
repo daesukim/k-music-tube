@@ -1,14 +1,17 @@
-import React from 'react'
 import Main from '../components/section/Main'
-
 import { todayText } from '../data/Today'
 import { Link } from 'react-router-dom'
+import { usePageTitle } from '../utils/usePageTitle'
 
 const Today = () => {
+  usePageTitle('Recommended');
+
   return (
-    <Main title = "Today" description = "Today's recommended videos">
-      <section id = "todayPage">
-        <h2> Today's Recommended Videos</h2>
+    <Main>
+      <section id="todayPage">
+        <div className='section-title'>
+            <h2>Today's Recommended Videos</h2>
+        </div>
         {todayText.map((today, key) => (
           <div className='today_inner' key={key}>
             <div className='today_thumb play_icon'>

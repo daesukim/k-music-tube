@@ -1,11 +1,7 @@
-import React from 'react'
-
 const Footer = () => {
   return (
-    <footer id = 'footer' role = 'contentinfo'>
-      <a href="sss" rel='noopener noreferrer'>
-        Daesu Kim
-      </a>
+    <footer id='footer' role='contentinfo'>
+        © 2025 Daesu Kim. All Rights Reserved
     </footer>
   )
 }

@@ -1,31 +1,19 @@
-import React from 'react'
-import {Helmet, HelmetProvider} from 'react-helmet-async'
-
 import Header from './Header'
 import Footer from './Footer'
 import Search from './Search'
 import ScrollTo from '../../utils/scrollTo'
 
-const Main = (props) => {
+const Main = ({children}) => {
   return (
-    <HelmetProvider>
+    <>
       <ScrollTo />
-      <Helmet 
-          titleTemplate="%s | K-Music Tube" 
-          defaultTitle="K-Music Tube" 
-          defer={false}
-      >
-          {props.title && <title>{props.title}</title>}
-          <meta name="description" content={props.description} />
-      </Helmet>
-
       <Header />
       <main id="main" role="main">
         <Search />
-        {props.children}
+        {children}
       </main>
       <Footer />
-    </HelmetProvider>
+    </>
   )
 }
 

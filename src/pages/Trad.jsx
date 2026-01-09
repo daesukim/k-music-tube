@@ -1,11 +1,13 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import Main from '../components/section/Main'
-
 import VideoCards from '../components/videos/VideoCard'
 import { tradText } from '../data/Trad'
+import { usePageTitle } from '../utils/usePageTitle'
 
 const Trad = () => {
   const [loading, setLoading] = useState(true); 
+
+  usePageTitle('Traditional');
 
   useEffect(() => {
       setTimeout(() => {
@@ -16,9 +18,11 @@ const Trad = () => {
   const tradPageClass = loading ? 'isLoading' : 'isLoaded';
 
   return (
-    <Main title = "Korean Traditional Music" description = "Korean Traditional Music">
+    <Main>
       <section id = 'tradPage' className={tradPageClass}>
-        <h2> 😄 Korean Traditional Music </h2>
+        <div className='section-title'>
+            <h2>Korean Traditional Music</h2>
+        </div>
         <div className='video_inner'>
           <VideoCards videos={tradText} />
         </div>
